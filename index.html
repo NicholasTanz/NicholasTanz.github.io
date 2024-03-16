@@ -1,71 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Your Name] - About Me</title>
-    <style>
-        /* Add some basic styles to the image */
-        .logo-img {
-            width: 100px; /* Adjust the width as needed */
-            height: auto;
-            transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
-        }
-
-        /* Add a scale effect on hover */
-        .logo-img:hover {
-            transform: scale(1.1); /* Adjust the scale factor as needed */
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicholas Tanzillo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #595858; 
+    }
+    header {
+      background-color: #2c3e50; 
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+    section {
+      padding: 20px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .center {
+      text-align: center;
+    }
+    .profile-img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 0 auto;
+      display: block;
+      box-shadow: 0 0 10px rgba(230, 229, 229, 0.1);
+    }
+    .content {
+      text-align: justify;
+    }
+    .content h2 {
+      color: #333;
+    }
+    .contact img {
+      width: 100px;
+      margin: 10px;
+      transition: transform 0.3s ease;
+    }
+    .contact img:hover {
+      transform: scale(1.1);
+    }
+    .experience {
+      background-color: #534b4b37;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    .experience h4 {
+      margin-top: 0;
+      color: #333;
+    }
+    .experience p {
+      margin-bottom: 5px;
+    }
+    .course-link {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body style="background-color: #001F3F; color: #DDEBF7;">
-    <header>
-        <h1>About Me</h1>
-            Hello, I'm Nicholas Tanzillo, a junior at Purdue studying Computer Engineering, graduating in May '25. I have previous experience as a 
-            Software Engineering intern at <a href="https://www.geappliances.com/">GE Appliances</a> and as an undergraduate teaching assistant 
-            for <a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=729&show=true&type=undergrad">ECE 20875</a>
-            and <a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=591&show=true&type=undergrad">ECE 26400</a>. I am interested in Embedded Systems, 
-            Artificial Intelligence, and Software Development. Outside of academics, I enjoy hiking, running, badminton, and watching shows.
-    </header>
+<body>
+  <header>
+    <h1>Nicholas Tanzillo</h1>
+    <h3>Computer Engineering @ Purdue</h3>
+  </header>
 
-    <section>
-        <h2>Education</h2>
-        <p><strong>Purdue University</strong> - Bachelor of Science in Computer Engineering (GPA: 3.77)</p>
-    </section>
+  <nav>
+    <a href="mailto:nicholastanzillo@gmail.com">Email</a>
+    <a href="https://github.com/NicholasTanz">GitHub</a>
+    <a href="https://Linkedin.com/in/NicholasTanz">Linkedin</a>
+  </nav>
 
-    <section>
-        <h2>Relevant Coursework</h2>
-        <ul>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=716&show=true&type=undergrad">ECE 20001</a> - Electrical Engineering Fundamentals I</li>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=725&show=true&type=undergrad">ECE 20002</a> - Electrical Engineering Fundamentals II</li>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=607&show=true&type=undergrad">ECE 27000</a> - Introduction to Digital System Design</li>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=591&show=true&type=undergrad">ECE 26400</a> - Advanced C Programming</li>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=729&show=true&type=undergrad">ECE 20875</a> - Python for Data Science</li>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/UGO/UGO/CourseInfo/courseInfo?courseid=612&show=true&type=undergrad">ECE 36200</a> - Microprocessor Systems and Interfacing</li>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/UGO/CourseInfo/courseInfo?courseid=542&show=true&type=undergrad">ECE 36800</a> - Data Structures</li>
-            <li><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/UGO/UGO/CourseInfo/courseInfo?courseid=64&show=true&type=undergrad">ECE 47300</a> - Introduction to Artifical Intellgience</li>
-        </ul>
-    </section>
+  <section id="main" class="center">
+    <div class="container">
+      <img src="IMG_9646.jpg" alt="Your Name" class="profile-img">
+    </div>
+  </section>
 
-    <!-- Add an image link with a hover effect -->
-    <section>
-        <h2>Connect with Me</h2>
-        
-        <!-- Email -->
-        <a href="mailto:nicholastanzillo@gmail.com" target="_blank">
-            <img src="email_logo.jpg" alt="Email" class="logo-img">
-        </a>
-    
-        <!-- GitHub -->
-        <a href="https://github.com/NicholasTanz" target="_blank">
-            <img src="githubcat.png" alt="GitHub" class="logo-img">
-        </a>
-    
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/NicholasTanz" target="_blank">
-            <img src="linkedin_image.png" alt="LinkedIn" class="logo-img">
-        </a>
-    </section>
-    
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="content">
+        <p> Hello! I'm a Computer Engineering student at Purdue University with concentrations in Artifical Intelligence / Machine Learning and Software Development. My
+          anticipated graduation date is in May of 2025. In my free time, I try to contribute to open source projects like <a href="https://theupdateframework.io/">TUF</a>. Outside of academics, I enjoy hiking, running, walking my dogs and watching horror movies. My interests are in AI/ML,
+        Software Development and Embedded Systems, but I am always eager to contribute to meaningful, interesting projects!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <p>Purdue University - Bachelor of Science in Computer Engineering, GPA: 3.77</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="content">
+        <li>Core Technical Skills: Python, C, C++, JavaScript, YAML, Django, MATLAB, Linux/Unix, PowerShell, MySQL.</li>
+        <li>Development Tools & Practices: Git, Gitlab, CI/CD, OOP, TDD, VSCode, pytest, Tox, CppUnit.</li>
+        <li>Collaboration: JIRA, Agile, Confluence, Slack, Discord.</li>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience">
+        <h4>Work Experience 1</h4>
+        <p>Position: Undergraduate Teaching Assistant - Python for Data Science</p>
+        <p>Company: Purdue</p>
+        <p>Location: West Lafayette, IN</p>
+        <p>Time: Janurary 2024 - Present</p>
+        <p>Responsibilities:</p>
+        <li>Assist students in programming assignments, proctor exams and grade assignments.</li>
+        <li>Tools and languages utilized: Python, NumPy, SciPy, Matplotlib, Pandas, Scikit-learn, Git.</li>
+      </div>
+      <div class="experience">
+        <h4>Work Experience 2</h4>
+        <p>Position: Undergraduate Teaching Assistant - Advanced C Programming</p>
+        <p>Company: Purdue</p>
+        <p>Location: West Lafayette, IN</p>
+        <p>Time: August 2023 - December 2023</p>
+        <p>Responsibilities:</p>
+        <li>Assist students in programming assignments and understanding course concepts.</li>
+        <li>Tools and languages utilized: C, GDB, Valgrind, Git, Linux.</li>
+      </div>
+      <div class="experience">
+        <h4>Work Experience 3</h4>
+        <p>Position: Embedded Software Engineering Intern</p>
+        <p>Company: GE Appliances</p>
+        <p>Location: Hybrid</p>
+        <p>Time: May 2023 - August 2023</p>
+        <p>Responsibilities:</p>
+        <li>Implemented several modules related to refrigeration modes, hardware discovery, and integration testing.</li>
+        <li>Debuged and refactored legacy code relating to ice making, offset calculations, as well as improving documentation.</li>
+        <li>Tools and languages utilized: C, Lua, Git, Linux, CI/CD, AD2.</li>
+      </div>
+    </div>
+  </section>
+
+  <section id="coursework">
+    <div class="container">
+      <h2>Relevant Coursework</h2>
+      <ul>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=591&show=true&type=undergrad">ECE 26400 - Advanced C Programming</a></span></li>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=542&show=true&type=undergrad">ECE 36800 - Data Structures</a></span></li>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=47&show=true&type=undergrad">ECE 36900 - Discrete Mathematics</a></span></li>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=33&show=true&type=undergrad">ECE 30100 - Signals and Systems</a></span></li>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=34&show=true&type=undergrad">ECE 30200 - Probabilistic Methods</a></span></li>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=612&show=true&type=undergrad">ECE 36200 - Microprocessor Systems and Interfacing</a></span></li>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=729&show=true&type=undergrad">ECE 20875 - Python for Data Science</a></span></li>
+        <li><span class="course-link"><a href="https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=64&show=true&type=undergrad">ECE 47300 - Introduction to Artifical Intelligence</a></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="center bottom-portion">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact">
+        <a href="mailto:youremail@example.com"><img src="email_logo.jpg" alt="Email"></a>
+        <a href="https://linkedin.com/in/NicholasTanz"><img src="linkedin_image.png" alt="LinkedIn"></a>
+        <a href="https://github.com/NicholasTanz"><img src="githubcat.png" alt="Github"></a>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
